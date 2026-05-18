@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Username Validation</title>
+</head>
+<body>
+
+<h2>Username Login Program</h2>
+
+<input type="text" id="username" placeholder="Enter Username">
+
+<button onclick="checkLogin()">Login</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+let count = 0;
+
+function checkLogin()
+{
+    let username = document.getElementById("username").value;
+
+    do
+    {
+        if(username == "admin")
+        {
+            document.getElementById("result").innerHTML = "Login Successful";
+            break;
+        }
+        else
+        {
+            count++;
+
+            if(count >= 3)
+            {
+                document.getElementById("result").innerHTML = "Account Blocked";
+                break;
+            }
+            else
+            {
+                document.getElementById("result").innerHTML = "Wrong Username";
+                break;
+            }
+        }
+
+    }
+    while(username != "admin");
+}
+
+</script>
+
+</body>
+</html>

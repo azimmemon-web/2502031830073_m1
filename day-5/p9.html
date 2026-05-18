@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM PIN Validation</title>
+</head>
+<body>
+
+<h2>ATM PIN Validation Using Do While Loop</h2>
+
+<input type="password" id="pin" placeholder="Enter ATM PIN">
+
+<button onclick="checkPin()">Submit</button>
+
+<h3 id="result"></h3>
+
+<script>
+
+let correctPin = 1234;
+let userpin;
+let count = 0;
+
+function checkPin()
+{
+    do
+    {
+        userpin = document.getElementById("pin").value;
+        count++;
+
+        if(userpin == correctPin)
+        {
+            document.getElementById("result").innerHTML = "Correct PIN";
+            break;
+        }
+        else
+        {
+            if(count >= 3)
+            {
+                document.getElementById("result").innerHTML = "Card Blocked";
+                break;
+            }
+            else
+            {
+                document.getElementById("result").innerHTML = "Wrong PIN";
+                break;
+            }
+        }
+
+    }
+    while(userpin != correctPin);
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+</head>
+<body>
+
+<h2>Password Validation Using Do While</h2>
+
+<input type="password" id="pass" placeholder="Enter Password">
+<button onclick="checkPassword()">Login</button>
+
+<p id="result"></p>
+
+<script>
+
+function checkPassword()
+{
+    let password;
+    let correct = false;
+
+    do
+    {
+        password = document.getElementById("pass").value;
+
+        if(password === "admin123")
+        {
+            correct = true;
+            document.getElementById("result").innerHTML = "Login Successful";
+        }
+        else
+        {
+            document.getElementById("result").innerHTML = "Wrong Password";
+            break;
+        }
+
+    } while(!correct);
+}
+
+</script>
+
+</body>
+</html>
