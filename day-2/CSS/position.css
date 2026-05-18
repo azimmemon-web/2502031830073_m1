@@ -1,0 +1,17 @@
+box1{
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+
+box2{
+    position: fixed;
+    left: 50px;
+    top: 100px;
+}
+
+box3{
+    position: relative;
+    left: 50px;
+    top: 100px;
+}

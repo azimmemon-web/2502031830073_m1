@@ -1,0 +1,28 @@
+#para1{
+    text align:right: ;;
+}
+p{
+    color:yellow;
+}
+
+body{
+    background-image: url("Screenshot\ 2026-01-30\ 192842.png");
+    background-repeat: repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+}
+ h4{
+    color: greenyellow; 
+    font-family:'Times New Roman', Times, serif;
+    font-size: 60px;
+ }
+
+.h1{
+    text-decoration:brown;
+        text-decoration: dotted;
+        text-align: center;
+        text-transform:lowercase;
+        text-shadow: none;
+    }
+
