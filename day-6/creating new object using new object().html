@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creating object</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+    <script>
+    var person = new Object();
+
+    // Assign fields to object "person"
+
+    person.firstName = "Ashraf";
+    person.lastName = "Vantiya";
+
+    // Assign a method to object "person"
+         
+    person.sayHi = () => {
+        alert("Welcome " + person.firstName + " " + person.lastName)
+    }
+
+    person.sayHi();  // Call the method in "person"
+</script>
+</body>
+</html>

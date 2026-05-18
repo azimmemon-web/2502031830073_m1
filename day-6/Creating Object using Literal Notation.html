@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creating Object</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+    <script>
+        var person = {
+            firstName: "Ashraf",
+            lastName: "Vantiya",
+
+            sayHi: function () {
+                alert("Hi! " + this.firstName + " " + this.lastName);
+            }
+        };
+
+        // Function call
+        person.sayHi();
+    </script>
+</body>
+</html>
