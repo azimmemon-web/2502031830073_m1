@@ -1,0 +1,11 @@
+.a{
+    border: 2px solid black;
+    height: 400px;
+    width: 600px;
+
+    /* image add */
+    background-image: url("Responsive Website.jpg");
+
+    /* image repeat */
+    background-repeat: repeat;
+}
