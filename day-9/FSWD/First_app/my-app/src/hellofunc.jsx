@@ -1,25 +1,4 @@
-// import './App.css'
-
-// function Hello() {
-
-//     const getName = (yourname){
-//         return yourname;
-
-        
-//     } 
-//     let name = "Azim"
-
-//     return (
-//         <div>
-//             <h2 className='test'>Hello, React {name}</h2>
-//         </div>
-//     )
-// }
-
-// export default Hello
-
-
-function Hello() {
+function hello() {
 
     const getName = (yourname) => {
         return yourname;
@@ -44,4 +23,4 @@ function Hello() {
     );
 }
 
-export default Hello;
+export default hello;
