@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+  <!-- Single line input text field -->
+
+<input type="text" id="userInput" placeholder="Type something...">
+
+<!-- Clickable interface button -->
+
+<button id="actionButton">Submit</button>
+
+<!-- Content paragraph block -->
+
+<p id="displayText">Your text will appear here.</p>
+
+<script
+  src="https://code.jquery.com/jquery-4.0.0.slim.js"
+
+  integrity="sha256-M+GjhMBfXikM1izMplICCTscIj5hzPCp6uDzaypxtgg="
+  crossorigin="anonymous"></script>
+
+  <script>
+
+         // Triggers when the submit button is clicked
+
+    $('#actionButton').click(function() {
+
+        // Grabs the input value and directly shows it in an alert
+        alert($('#userInput').val());
+    });
+
+    //$('#actionButton').click(function() {
+
+    // alert($('#userInput').val());
+    //});
+
+    $(document).ready(
+        function(){
+            alert("Page is loaded");
+        }
+
+    )
+  </script>
+</body>
+</html>
+
+
+
+
+

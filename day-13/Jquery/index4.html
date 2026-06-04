@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Effects</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <p id="p1">
+        Hello Azim! This is a paragraph used to demonstrate Hide, Show, Fade In, Fade Out, and Toggle effects in jQuery.
+    </p>
+
+    <button id="hideBtn">Hide</button>
+    <button id="showBtn">Show</button>
+    <button id="fadeOutBtn">Fade Out</button>
+    <button id="fadeInBtn">Fade In</button>
+    <button id="toggleBtn">Toggle</button>
+
+    <script>
+        $("#hideBtn").click(function() {
+            $("#p1").hide();
+        });
+
+        $("#showBtn").click(function() {
+            $("#p1").show();
+        });
+
+        $("#fadeOutBtn").click(function() {
+            $("#p1").fadeOut();
+        });
+
+        $("#fadeInBtn").click(function() {
+            $("#p1").fadeIn();
+        });
+
+        $("#toggleBtn").click(function() {
+            $("#p1").toggle();
+        });
+    </script>
+
+</body>
+</html>

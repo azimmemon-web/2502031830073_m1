@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Menu Bar</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+            width: 200px;
+        }
+
+        li {
+            background: #3498db;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid white;
+        }
+
+        .submenu {
+            display: none;
+            background: #ecf0f1;
+            color: black;
+        }
+
+        .submenu li {
+            background: #ecf0f1;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li id="menu">Courses ▼</li>
+
+        <ul class="submenu">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+        </ul>
+    </ul>
+
+    <script>
+        $("#menu").click(function() {
+            $(".submenu").slideToggle();
+        });
+    </script>
+
+</body>
+</html>

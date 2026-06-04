@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .question {
+            background-color: #f2f2f2;
+            padding: 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+        }
+
+        .answer {
+            display: none;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="question">What is jQuery?</div>
+    <div class="answer">
+        jQuery is a JavaScript library used to simplify HTML DOM manipulation, event handling, and animations.
+    </div>
+
+    <div class="question">What is JavaScript?</div>
+    <div class="answer">
+        JavaScript is a programming language used to make web pages interactive.
+    </div>
+
+    <div class="question">What is HTML?</div>
+    <div class="answer">
+        HTML stands for HyperText Markup Language and is used to create web pages.
+    </div>
+
+    <script>
+        $(".question").click(function() {
+            $(this).next(".answer").slideToggle();
+        });
+    </script>
+
+</body>
+</html>
