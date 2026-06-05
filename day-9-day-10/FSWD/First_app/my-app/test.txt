@@ -1,0 +1,8 @@
+# 1. Ek choti si dummy text file banayein folder ke andar
+echo "done" > day-9-day-10/done.txt
+
+# 2. Ise Git mein add karein
+git add day-9-day-10/done.txt
+
+# 3. "React js" message ke saath commit karein
+git commit -m "React js"
